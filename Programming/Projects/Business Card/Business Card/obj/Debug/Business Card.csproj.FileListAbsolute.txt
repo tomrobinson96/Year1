@@ -1,0 +1,8 @@
+c:\users\tom\documents\visual studio 2012\Projects\Business Card\Business Card\bin\Debug\Business Card.exe.config
+c:\users\tom\documents\visual studio 2012\Projects\Business Card\Business Card\bin\Debug\Business Card.exe
+c:\users\tom\documents\visual studio 2012\Projects\Business Card\Business Card\bin\Debug\Business Card.pdb
+c:\users\tom\documents\visual studio 2012\Projects\Business Card\Business Card\obj\Debug\Business Card.exe
+c:\users\tom\documents\visual studio 2012\Projects\Business Card\Business Card\obj\Debug\Business Card.pdb
+C:\Users\Tom\Documents\Year 1\Programming\Projects\Business Card\Business Card\bin\Debug\Business Card.exe.config
+C:\Users\Tom\Documents\Year 1\Programming\Projects\Business Card\Business Card\obj\Debug\Business Card.exe
+C:\Users\Tom\Documents\Year 1\Programming\Projects\Business Card\Business Card\obj\Debug\Business Card.pdb

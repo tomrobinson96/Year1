@@ -1,0 +1,9 @@
+Album|C|D|500.00|2|6|3
+Album|E|F|5.00|0|15|2
+Tape|Pink Floyd|Dark Side of the Moon|19.99|2|2|1
+Tape|Rush|2112|3.99|0|1|0
+Tape|Within Temptation|Unforgiven|9.99|4|0|3
+Album|Pink Floyd|Dark Side of the Moon|15.99|7|0|0
+CD|Pink Floyd|Wish You Were Here|9.99|3|0|1
+CD|Epica|Divine Conspiracy|12.99|2|1|2
+Tape|Nightwish|Once|11.99|3|0|0

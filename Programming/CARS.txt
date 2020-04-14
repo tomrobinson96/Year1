@@ -1,0 +1,171 @@
+CARS ( SECOND FORM)
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Assignment2New
+{
+    public partial class Cars : Form
+    {
+        /// <summary>
+        /// Display mode selection options
+        /// </summary>
+        public enum Mode { Creation, Editing}
+
+        private Car currentCar;
+        /// <summary>
+        /// reference to the title being displayed or created by this form
+        /// </summary>
+        public Car CurrentCar
+        {
+            get
+            {
+                return currentCar;
+            }
+            set
+            {
+                currentCar = value;
+                DisplayCar();
+            }
+        }
+
+        private Mode currentMode = Mode.Editing;
+        /// <summary>
+        /// the mode the form is in
+        /// </summary>
+            public Mode CurrentMode
+            {
+                get
+                {
+                    return currentMode;
+                }
+                set
+                {
+                    currentMode = value;
+                    AdjustForMode();
+                }
+            }
+        /// <summary>
+        /// Defalt constructor
+        /// </summary>
+        public Cars()
+        {
+            InitializeComponent();
+            AdjustForMode();
+        }
+
+        void AdjustForMode()
+        {
+            switch (currentMode)
+            {
+                case Mode.Creation:
+                    txtName.ReadOnly = false;
+                    txtLicencePlate.ReadOnly = false;
+                    txtColour.ReadOnly = false;
+                    txtMake.ReadOnly = false;
+                    radStandardCarSelect.Enabled = true;
+                    radWideSpaceSelect.Enabled = true;
+                    btnAdd.Enabled = true;
+                    btnCancel.Enabled = true;
+                    break;
+                case Mode.Editing:
+                    txtName.ReadOnly = true;
+                    txtLicencePlate.ReadOnly = true;
+                    txtColour.ReadOnly = true;
+                    txtMake.ReadOnly = true;
+                    radStandardCarSelect.Enabled = false;
+                    radWideSpaceSelect.Enabled = false;
+                    btnAdd.Enabled = false;
+                    btnCancel.Enabled = true;
+                    break;
+            }
+
+        }
+        void DisplayCar()
+        {
+            if (CurrentCar != null)
+            {
+                if (currentCar is StandardCars)
+                {
+                    radStandardCarSelect.Checked = true;
+                }
+                else if (CurrentCar is WideCar)
+                {
+                    radWideSpaceSelect.Checked = true;
+                }
+
+
+                txtName.Text = CurrentCar.Name;
+                txtLicencePlate.Text = CurrentCar.LicencePlate;
+                txtColour.Text = CurrentCar.Colour;
+                txtMake.Text = CurrentCar.Make;
+            }
+        }
+        /// <summary>
+        /// Event Handler to enable the OK button when the user 
+        /// makes a change (in Editing modes).
+        /// To be bound to change events of appropriate controls.
+        /// </summary>
+        /// <param name="sender">The object raising the event</param>
+        /// <param name="e">The event parameters</param>
+        private void EnableOKOnTextChanged(object sender, EventArgs e)
+        {
+            if (this.Visible)
+            {
+                if (CurrentMode == Mode.Editing )
+                    btnAdd.Enabled = true;
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            switch (CurrentMode)
+            {
+                case Mode.Creation:
+                    //Identify the subclass of Title to be created, then make it.
+                    if (radStandardCarSelect.Checked)
+                    {
+                        Car newCar = new StandardCars(txtName.Text, txtLicencePlate.Text, txtColour.Text, txtMake.Text); ;
+                        currentCar = newCar;
+                    }
+                    else if (radWideSpaceSelect.Checked)
+                    {
+                        Car newCar = new WideCar(txtLicencePlate.Text, txtColour.Text, txtMake.Text, txtName.Text);;
+                    }
+                    break;
+                case Mode.Editing:
+                    break;
+            }
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLicencePlate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtColour_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMake_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+    }
+}

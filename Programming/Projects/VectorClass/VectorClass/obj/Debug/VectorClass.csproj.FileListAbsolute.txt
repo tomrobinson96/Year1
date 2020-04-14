@@ -1,0 +1,6 @@
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\VectorClass\VectorClass\bin\Debug\VectorClass.exe.config
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\VectorClass\VectorClass\bin\Debug\VectorClass.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\VectorClass\VectorClass\bin\Debug\VectorClass.pdb
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\VectorClass\VectorClass\obj\Debug\VectorClass.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\VectorClass\VectorClass\obj\Debug\VectorClass.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\VectorClass\VectorClass\obj\Debug\VectorClass.pdb

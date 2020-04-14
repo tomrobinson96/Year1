@@ -1,0 +1,11 @@
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\bin\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.deps.json
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\bin\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.runtimeconfig.json
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\bin\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.runtimeconfig.dev.json
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\bin\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.dll
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\bin\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.pdb
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\obj\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\obj\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\obj\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\obj\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.AssemblyInfo.cs
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\obj\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.dll
+C:\Users\Owner\Documents\Year 1\Programming\Projects\TomDickHarry_SourceFiles\obj\Debug\netcoreapp2.2\TomDickHarry_SourceFiles.pdb

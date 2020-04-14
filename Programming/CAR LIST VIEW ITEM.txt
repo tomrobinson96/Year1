@@ -1,0 +1,66 @@
+CAR VIEW LIST ITEM
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Assignment2New
+{
+    public class CarListViewItem
+    {
+        #region Member Variables
+        private ListViewItem listItem;
+        //the list view item used to display this car
+        public ListViewItem ListItem
+        {
+            get
+            {
+                //create or refresh the ListViewItem
+                if (listItem == null)
+                {
+                    listItem = new ListViewItem();
+                    listItem.Text = data.Name;
+                    listItem.SubItems.Add(data.LicencePlate);
+                    listItem.SubItems.Add(data.Colour);
+                    listItem.SubItems.Add(data.Make);
+                    listItem.Tag = this;
+                }
+                else
+                {
+                    RefreshListItem();
+                }
+                return listItem;
+            }
+        }
+        private Car data;
+        // the title to be displayed
+        public Car Data
+        {
+            get { return data; }
+            //set { data = value;}
+        }
+        #endregion
+        public void RefreshListItem()
+        {
+            listItem.Text = data.Name;
+            listItem.SubItems[1].Text = data.LicencePlate;
+            listItem.SubItems[2].Text = data.Colour;
+            listItem.SubItems[3].Text = data.Make;
+        }
+        /// <summary>
+        /// Sets a ListView to display the appropriate columns for displaying a car in detail mode.
+        /// </summary>
+        /// <param name="listView"></param>
+        public static void SetListColumns(ListView listView)
+        {
+            listView.Columns.Clear();
+            listView.Columns.Add("Name");
+            listView.Columns.Add("Licence Plate");
+            listView.Columns.Add("Colour");
+            listView.Columns.Add("Make");            
+        }
+    }
+}

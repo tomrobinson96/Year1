@@ -1,0 +1,11 @@
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\bin\Debug\netcoreapp2.2\Assignment 1 Documentation.deps.json
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\bin\Debug\netcoreapp2.2\Assignment 1 Documentation.runtimeconfig.json
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\bin\Debug\netcoreapp2.2\Assignment 1 Documentation.runtimeconfig.dev.json
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\bin\Debug\netcoreapp2.2\Assignment 1 Documentation.dll
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\bin\Debug\netcoreapp2.2\Assignment 1 Documentation.pdb
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\obj\Debug\netcoreapp2.2\Assignment 1 Documentation.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\obj\Debug\netcoreapp2.2\Assignment 1 Documentation.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\obj\Debug\netcoreapp2.2\Assignment 1 Documentation.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\obj\Debug\netcoreapp2.2\Assignment 1 Documentation.AssemblyInfo.cs
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\obj\Debug\netcoreapp2.2\Assignment 1 Documentation.dll
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Assignment 1\Assignment 1 Documentation\obj\Debug\netcoreapp2.2\Assignment 1 Documentation.pdb

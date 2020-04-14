@@ -1,0 +1,69 @@
+WIDE CAR
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using System.Text;
+
+namespace Assignment2New
+{
+    /// <summary>
+    /// represents a wide space
+    /// </summary>
+     class WideCar : Car
+     {
+        /// <summary>
+        /// Identifier for use in saved data
+        /// </summary>
+        public const string TypeName = "Wide";
+
+        #region Constructors
+
+        public WideCar(string sourceData)
+        {
+            string[] dataItems = sourceData.Split('|');
+            ConstructMe(dataItems[1], dataItems[2], dataItems[3], dataItems[4]);
+        }
+
+        /// <summary>
+        /// Contructor for creating a new car.
+        /// </summary>
+        /// <param name="name">name of car owner</param>
+        /// <param name="licencePlate">licence plate of car</param>
+        /// <param name="colour">colour of car</param>
+        /// <param name="make">make of car</param>
+        public WideCar(string name, string licencePlate, string colour, string make)
+            : base(name, licencePlate, colour, make)
+        {
+        }
+        #endregion
+
+
+        public override void SaveToFile(StreamWriter dataFileOut)
+        {
+            StringBuilder outputString = new StringBuilder();
+            outputString.Append(TypeName);
+            outputString.Append("|");
+            outputString.Append(name);
+            outputString.Append("|");
+            outputString.Append(licencePlate);
+            outputString.Append("|");
+            outputString.Append(colour);
+            outputString.Append("|");
+            outputString.Append(make);
+            outputString.Append("|");
+            
+            dataFileOut.WriteLine(outputString);
+        }
+
+
+        public override float Width
+        {
+            get { return 3f; }
+        }
+
+    }
+}

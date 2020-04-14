@@ -1,0 +1,9 @@
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\bin\Debug\HelloWorldOfWindows.exe.config
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\bin\Debug\HelloWorldOfWindows.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\bin\Debug\HelloWorldOfWindows.pdb
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\obj\Debug\HelloWorldOfWindows.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\obj\Debug\HelloWorldOfWindows.frmHelloWorld.resources
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\obj\Debug\HelloWorldOfWindows.Properties.Resources.resources
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\obj\Debug\HelloWorldOfWindows.csproj.GenerateResource.Cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\obj\Debug\HelloWorldOfWindows.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\HelloWorldOfWindows\HelloWorldOfWindows\obj\Debug\HelloWorldOfWindows.pdb

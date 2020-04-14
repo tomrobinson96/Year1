@@ -1,0 +1,7 @@
+Problems:
+
+When punching, animator will not play punching animation but does get stuck in the loop on punching in the 'animator' tab, can be manually turned off if you click on the tickbox 
+
+
+When trying to get enemey to shoot, not sure what variable to use to make it shoot in one direction
+

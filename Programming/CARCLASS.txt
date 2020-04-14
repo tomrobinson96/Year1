@@ -1,0 +1,106 @@
+
+Car
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Windows.Forms;
+
+namespace Assignment2New
+{
+    public abstract class Car
+    {
+        #region Member variables
+        // the width of each physical copy in millimeters
+        public abstract float Width { get; }
+        protected string name;
+        //name of the car owner
+        public string Name
+        {
+            get { return name; }
+        }
+        protected string licencePlate;
+        //the licence plate of the car
+        public string LicencePlate
+        {
+            get { return licencePlate; }
+        }
+        protected string colour;
+        //the licence plate of the car
+        public string Colour
+        {
+            get { return colour; }
+        }
+        protected string make;
+        //the licence plate of the car
+        public string Make
+        {
+            get { return make; }
+        }
+        #endregion
+
+        #region Contructors
+        public Car(string name, string licencePlate, string colour, string make)
+        {
+            ConstructMe(name, licencePlate, colour, make);
+        }
+        /// <summary>
+        /// Method for assisting construction, shared between constructor types
+        /// </summary>
+        /// <param name="Name">The name of the car owner</param>
+        /// <param name="licencePlate">the licence plate of the car</param>
+        /// <param name="colour">The colour of the car</param>
+        /// <param name="make">The make of the car</param>
+
+        protected void ConstructMe(string name, string licencePlate, string colour, string make)
+        {
+            this.name = name;
+            this.licencePlate = licencePlate;
+            this.colour = colour;
+            this.make = make;
+        }
+        //hiddend contructor to facilitate subclass specific constructors.
+        protected Car()
+        {
+        }
+        #endregion
+
+        #region Member methods
+        //save the state of the object to a stream
+        /// <param name="dataFileOut">An output stream</param>
+        public abstract void SaveToFile(StreamWriter dataFileOut);
+        #endregion
+
+        /// <summary>
+        /// Factory method for determining which subclass to load from a data source
+        /// </summary>
+        /// <param name="dataFileIn">Streamreader containing the car data</param>
+        /// <returns>A new car of the appropriate type from the data</returns>
+        public static Car LoadCar(StreamReader dataFileIn)
+        {
+            Car result = null;
+            //load the next record from the stream
+            string sourceData = dataFileIn.ReadLine();
+
+            //determines the typle of car to be input
+            if (sourceData.StartsWith(StandardCars.TypeName))
+            {
+                result = new StandardCars(sourceData);
+            }
+            else if (sourceData.StartsWith(WideCar.TypeName))
+            {
+                result = new WideCar (sourceData);
+            }
+            else
+            {
+                //There should be no records that do not begin with one of these codes    
+                throw new InvalidDataException("Unexpected data in file");
+            }
+            return result;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+CAR PARK
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Windows.Forms;
+
+namespace Assignment2New
+{
+   public class CarPark
+    {
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            CarParkView mainWindow = new CarParkView();
+            mainWindow.CarDataModel = new CarPark();
+            Application.Run(mainWindow);
+        }
+        #region Static variables
+        public static string filePath = Application.StartupPath + @"/CarPark.txt";
+        //Length of the 2 spaces in millimenters
+        public const float CARPARK_LENGTH = 100f;
+        #endregion
+
+        #region Member variables
+        private List<Car> cars;
+        //Full list of cars that have ever been in car park
+        public List<Car> Cars
+        {
+            get { return cars; }
+            //set { titles = value:}
+        }
+        #endregion
+
+        #region Contructors
+        public CarPark()
+        {
+            cars = new List<Car>();
+            LoadData();
+        }
+        #endregion
+        #region Private Methods
+        private void LoadData()
+        {
+            StreamReader dataFileIn = new StreamReader(filePath);
+            while (!dataFileIn.EndOfStream)
+            {
+                //create a new car for each line in the stream
+                Car newCar = Car.LoadCar(dataFileIn);
+                cars.Add(newCar);
+            }
+            dataFileIn.Close();
+        }
+        //save all data to file
+        public void SaveData()
+        {
+            StreamWriter dataFileOut = new StreamWriter(filePath);
+            for (int index = 0; index < cars.Count; index++)
+            {
+                //ask each car to save itself to the stream
+                cars[index].SaveToFile(dataFileOut);
+            }
+            dataFileOut.Close();
+        }
+        #endregion
+
+    }
+}

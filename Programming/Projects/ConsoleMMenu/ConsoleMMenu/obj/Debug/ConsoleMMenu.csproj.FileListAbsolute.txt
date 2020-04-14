@@ -1,0 +1,9 @@
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\ConsoleMMenu\ConsoleMMenu\bin\Debug\ConsoleMMenu.exe.config
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\ConsoleMMenu\ConsoleMMenu\bin\Debug\ConsoleMMenu.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\ConsoleMMenu\ConsoleMMenu\bin\Debug\ConsoleMMenu.pdb
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\ConsoleMMenu\ConsoleMMenu\obj\Debug\ConsoleMMenu.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\ConsoleMMenu\ConsoleMMenu\obj\Debug\ConsoleMMenu.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\ConsoleMMenu\ConsoleMMenu\obj\Debug\ConsoleMMenu.pdb
+C:\Users\Tom\Documents\Year 1\Programming\Projects\ConsoleMMenu\ConsoleMMenu\bin\Debug\ConsoleMMenu.exe.config
+C:\Users\Tom\Documents\Year 1\Programming\Projects\ConsoleMMenu\ConsoleMMenu\obj\Debug\ConsoleMMenu.exe
+C:\Users\Tom\Documents\Year 1\Programming\Projects\ConsoleMMenu\ConsoleMMenu\obj\Debug\ConsoleMMenu.pdb

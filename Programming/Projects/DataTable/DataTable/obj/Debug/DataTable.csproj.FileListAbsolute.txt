@@ -1,0 +1,11 @@
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\bin\Debug\DataTable.exe.config
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\bin\Debug\Database1.mdf
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\bin\Debug\Database1_log.ldf
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\bin\Debug\DataTable.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\bin\Debug\DataTable.pdb
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\obj\Debug\DataTable.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\obj\Debug\DataTable.Form1.resources
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\obj\Debug\DataTable.Properties.Resources.resources
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\obj\Debug\DataTable.csproj.GenerateResource.Cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\obj\Debug\DataTable.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\DataTable\DataTable\obj\Debug\DataTable.pdb

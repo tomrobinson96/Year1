@@ -1,0 +1,6 @@
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\Geometric Calculation 2\Geometric Calculation 2\bin\Debug\Geometric Calculation 2.exe.config
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\Geometric Calculation 2\Geometric Calculation 2\obj\Debug\Geometric Calculation 2.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\Geometric Calculation 2\Geometric Calculation 2\bin\Debug\Geometric Calculation 2.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\Geometric Calculation 2\Geometric Calculation 2\bin\Debug\Geometric Calculation 2.pdb
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\Geometric Calculation 2\Geometric Calculation 2\obj\Debug\Geometric Calculation 2.exe
+C:\Users\Tom\Documents\Visual Studio 2012\Projects\Geometric Calculation 2\Geometric Calculation 2\obj\Debug\Geometric Calculation 2.pdb

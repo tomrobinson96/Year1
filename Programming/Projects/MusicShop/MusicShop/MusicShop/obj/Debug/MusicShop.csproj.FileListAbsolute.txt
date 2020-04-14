@@ -1,0 +1,28 @@
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\bin\Debug\MusicShop.exe.config
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\bin\Debug\MusicShop.exe
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\bin\Debug\MusicShop.pdb
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.csprojResolveAssemblyReference.cache
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.Properties.Resources.resources
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.csproj.GenerateResource.Cache
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.exe
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.pdb
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.TitleView.resources
+c:\users\ian brown\documents\visual studio 2013\Projects\MusicShop\MusicShop\obj\Debug\MusicShop.ShopView.resources
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\bin\Debug\MusicShop.exe.config
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.exe
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.pdb
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\bin\Debug\MusicShop.exe
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\bin\Debug\MusicShop.pdb
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.csprojResolveAssemblyReference.cache
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.Properties.Resources.resources
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.ShopView.resources
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.TitleView.resources
+C:\Users\Ian Brown\Documents\Visual Studio 2013\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.csproj.GenerateResource.Cache
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.Properties.Resources.resources
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.ShopView.resources
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.TitleView.resources
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.csproj.GenerateResource.Cache
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.csproj.CoreCompileInputs.cache
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.exe
+C:\Users\Tom\Documents\Year 1\Programming\Projects\MusicShop\MusicShop\MusicShop\obj\Debug\MusicShop.pdb

@@ -1,0 +1,8 @@
+c:\users\tom\documents\visual studio 2012\Projects\Counting Up\Counting Up\bin\Debug\Counting Up.exe.config
+c:\users\tom\documents\visual studio 2012\Projects\Counting Up\Counting Up\bin\Debug\Counting Up.exe
+c:\users\tom\documents\visual studio 2012\Projects\Counting Up\Counting Up\bin\Debug\Counting Up.pdb
+c:\users\tom\documents\visual studio 2012\Projects\Counting Up\Counting Up\obj\Debug\Counting Up.exe
+c:\users\tom\documents\visual studio 2012\Projects\Counting Up\Counting Up\obj\Debug\Counting Up.pdb
+C:\Users\Tom\Documents\Year 1\Programming\Projects\Counting Up\Counting Up\bin\Debug\Counting Up.exe.config
+C:\Users\Tom\Documents\Year 1\Programming\Projects\Counting Up\Counting Up\obj\Debug\Counting Up.exe
+C:\Users\Tom\Documents\Year 1\Programming\Projects\Counting Up\Counting Up\obj\Debug\Counting Up.pdb

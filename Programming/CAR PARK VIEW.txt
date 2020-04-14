@@ -1,0 +1,254 @@
+CAR PARK VIEW (MAIN FORM)
+
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Assignment2New
+{
+    public partial class CarParkView : Form
+    {
+        #region Member Variables 
+        /// <summary>
+        /// the underlying data model of the car park
+        /// </summary>
+        public CarPark CarDataModel { get; set; }
+        /// <summary>
+        /// the currently selected and active car
+        /// </summary>
+        private CarListViewItem selectedItem;
+        #endregion 
+
+        #region Contructors
+        /// <summary>
+        /// fefualt constructor
+        /// </summary>
+        public CarParkView()
+        {
+            //build the form by calling the auto genrated code
+            InitializeComponent();
+            //display the data currently in the model
+            RefreshView();
+        }
+        #endregion
+        #region Event Handlers
+        /// <summary>
+        /// event handler for creating a new car detail
+        /// </summary>
+        /// <param name="sender">the object raising the event</param>
+        /// <param name="e">the event parameters</param>
+        private void btnNewCar_Click(object sender, EventArgs e)
+        {
+            Car newCar;
+
+            //create a new detail window for creation
+            Cars test = new Cars();
+            test.CurrentMode = Cars.Mode.Creation;
+            //display as a pop-up and handle the result
+            {
+                newCar = test.CurrentCar;
+                CarDataModel.Cars.Add(newCar);
+                RefreshView();
+            }
+        }
+
+        private void CarParkView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            CarDataModel.SaveData();
+        }
+        /// <summary>
+        /// Event handler for updating the selected item from the standard spaces
+        /// </summary>
+        /// <param name="sender">the object raising the vent</param>
+        /// <param name="e">the event parameters</param>
+        private void lvwStandardSpaces_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateSelectedItem(lvwStandardSpaces);
+        }
+        /// <summary>
+        /// Event handler for updating the selected item from the wide spaces
+        /// </summary>
+        /// <param name="sender">the object raising the vent</param>
+        /// <param name="e">the event parameters</param>
+        private void lvwWideSpaces_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateSelectedItem(lvwWideSpaces);
+        }
+        /// <summary>
+        /// Event Handler for the button to edit details
+        /// opens a new form as a pop-up dialog to request details
+        /// </summary>
+        /// <param name="sender">The onject raising the event</param>
+        /// <param name="e">The event Parameters</param>
+        private void btnEditDetails_Click(object sender, EventArgs e)
+        {
+            if (selectedItem != null)
+            {
+                //create a new for in Editing mode
+                Cars detailForm = new Cars();
+                detailForm.CurrentMode = Cars.Mode.Editing;
+                detailForm.CurrentCar = selectedItem.Data;
+
+                //show it as a dialog and if it was not cancelled, refresh display as the model will have changed
+                if (detailForm.ShowDialog() == DialogResult.OK)
+                {
+                    RefreshActionButtons();
+                    RefreshView();
+                }
+            }
+        }
+        /// <summary>
+        /// Event handler for triggering a new search/filter as the user types into
+        /// the search box
+        /// </summary>
+        /// <param name="sender">The object raising the event</param>
+        /// <param name="e">The event parameters</param>
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtSearch.Text;
+            //Reset the view of the data
+            RefreshView();
+            //Then eliminate non-matching titles
+            SearchForItem(searchText, lvwStandardSpaces);
+            SearchForItem(searchText, lvwWideSpaces);
+        }
+        /// <summary>
+        /// Event handler for manually saving the data
+        /// </summary>
+        /// <param name="sender">The object rasing the event</param>
+        /// <param name="e">the event parameter</param>
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            CarDataModel.SaveData();
+        }
+
+        private void btnRemoveCar_Click(object sender, EventArgs e)
+        {
+            if (selectedItem != null)
+            {
+                //selectedItem.Data.RemoveItem();
+                RefreshView();
+                RefreshActionButtons();
+            }
+        }
+
+        #endregion
+        #region Helper Methods
+
+        private void RefreshView()
+        {
+            //reset GUI elements
+            lvwStandardSpaces.Items.Clear();
+            lvwWideSpaces.Items.Clear();
+
+            //reset columns on the 
+            CarListViewItem.SetListColumns(lvwStandardSpaces);
+            CarListViewItem.SetListColumns(lvwStandardSpaces);
+
+            //check there is no data to display
+            //if (CarDataModel != null)
+            //{
+            //    //loop over all cars
+            //    for (int index = 0; index < CarDataModel.Cars.Count; index++)
+            //    {
+            //        Cars currentCar;
+            //        ListViewItem newItem = new CarListViewItem(currentCar).ListItem;
+            //        //restore highlight to currently selected item
+            //        if (selectedItem != null && selectedItem.Data == currentCar)
+            //        {
+            //            newItem.BackColor = Color.LightBlue;
+            //        }
+
+            //        //put each car in the correct car park
+            //        if (currentCar is StandardCars)
+            //        {
+            //            lvwStandardSpaces.Items.Add(newItem);
+            //        }
+            //        else if (currentCar is WideCar)
+            //        {
+            //            lvwWideSpaces.Items.Add(newItem);
+            //        }
+            //    }
+            //}
+        }
+        /// <summary>
+        /// Method to update the current selected item and highlight it in the list views
+        /// </summary>
+        /// <param name="lvwActiveList"></param>
+        private void UpdateSelectedItem(ListView lvwActiveList)
+        {
+            if (selectedItem != null && selectedItem.ListItem.ListView != null)
+            {
+                //Unhighlight the existing item
+                selectedItem.ListItem.BackColor = selectedItem.ListItem.ListView.BackColor;
+                selectedItem.ListItem.ListView.Refresh();
+            }
+
+            if (lvwActiveList.SelectedItems.Count == 1)
+            {
+                //remember the selected item and highlight it
+                selectedItem = (CarListViewItem)lvwActiveList.SelectedItems[0].Tag;
+                selectedItem.ListItem.BackColor = Color.LightBlue;
+            }
+            else
+            {
+                //we have no new selected item, so just clear the old one from memory
+                selectedItem = null;
+            }
+            RefreshActionButtons();
+        }
+
+        /// <summary>
+        /// Adjust the action buttons so they are valid for the current 
+        /// state of the currently selected title
+        /// </summary>
+        private void RefreshActionButtons()
+        {
+            if (selectedItem == null)
+            {
+                //disable all buttons 
+                btnEditDetails.Enabled = false;
+                btnNewCar.Enabled = false;
+                btnRemoveCar.Enabled = false;
+            }
+            else
+            {
+                //enable some or all buttons
+                btnEditDetails.Enabled = true;
+                btnRemoveCar.Enabled = true;
+            }
+        }
+        /// <summary>
+        /// Remove the items that don't match a search term from a list view control
+        /// </summary>
+        /// <param name="text">The string to match against</param>
+        /// <param name="list">The control to filter</param>
+        private void SearchForItem(string text, ListView list)
+        {
+            for (int index = 0; index < list.Items.Count; index++)
+            {
+                ListViewItem currentItem = list.Items[index];
+                if (currentItem.Text.ToUpper().Contains(text.ToUpper()) || currentItem.SubItems[1].Text.ToUpper().Contains(text.ToUpper()))
+                {
+                    //automatically select a matching item, and make sure it's scrolled to be visible.
+                    currentItem.Selected = true;
+                    currentItem.EnsureVisible();
+                }
+                else
+                {
+                    list.Items.Remove(currentItem);
+                    //Exceptionally, we must decrement the counter here as the list is now 
+                    //shorter by the current item.  To not do so would skip elements.
+                    index--;
+                }
+            }
+        }
+
+        #endregion
+                
+
+       
+
+
+    }
+}

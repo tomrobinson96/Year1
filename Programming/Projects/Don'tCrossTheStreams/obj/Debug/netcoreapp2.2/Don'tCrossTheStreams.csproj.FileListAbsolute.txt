@@ -1,0 +1,4 @@
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Don'tCrossTheStreams\obj\Debug\netcoreapp2.2\Don'tCrossTheStreams.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Don'tCrossTheStreams\obj\Debug\netcoreapp2.2\Don'tCrossTheStreams.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Don'tCrossTheStreams\obj\Debug\netcoreapp2.2\Don'tCrossTheStreams.AssemblyInfoInputs.cache
+C:\Users\Owner\Documents\Year 1\Programming\Projects\Don'tCrossTheStreams\obj\Debug\netcoreapp2.2\Don'tCrossTheStreams.AssemblyInfo.cs

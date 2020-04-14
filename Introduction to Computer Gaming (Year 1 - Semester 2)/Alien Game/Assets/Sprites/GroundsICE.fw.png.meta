@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 7e6d0f3864dcd6143a95599e05bd1000
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GroundsICE.fw_0
+    21300002: GroundsICE.fw_1
+    21300004: GroundsICE.fw_2
+    21300006: GroundsICE.fw_3
+    21300008: GroundsICE.fw_4
+    21300010: GroundsICE.fw_5
+    21300012: GroundsICE.fw_6
+    21300014: GroundsICE.fw_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GroundsICE.fw_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 346
+        width: 481
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 240
+        width: 482
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 75
+        width: 219
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_3
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 69
+        width: 156
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 145
+        width: 191
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 146
+        width: 181
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_6
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 145
+        width: 144
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GroundsICE.fw_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 74
+        width: 171
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
